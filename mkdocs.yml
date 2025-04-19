@@ -1,0 +1,57 @@
+site_name: Formatos de Tabela para Data Lakes
+site_description: Documentação sobre formatos de tabela para data lakes - Delta Lake e Apache Iceberg
+site_author: Edrik & Eryc
+
+# Tema e configurações de aparência
+theme:
+  name: mkdocs
+  palette:
+    # Esquema claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo escuro
+    # Esquema escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo claro
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+# Extensões
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+# Plugins
+plugins:
+  - search
+
+# Navegação
+nav:
+  - Início: docs/index.md
+  - Delta Lake:
+    - Operações: docs/delta-lake/operations.md
+  - Apache Iceberg:
+    - Operações: docs/iceberg/operations.md
+
+# Diretório de saída
+site_dir: site
