@@ -32,8 +32,7 @@ Este projeto demonstra:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/pyspark-lake-engine.git
-cd pyspark-lake-engine
+git clone https://github.com/edrikfsteiner/projeto-eng-dados.git
 ```
 
 2. Inicialize o projeto com UV:
@@ -66,24 +65,6 @@ Acesse os notebooks em `notebooks/` para exemplos funcionais:
 
 - `delta-lake-notebook.ipynb` – Criação, inserção, atualização e exclusão com Delta Lake.
 - `iceberg-notebook.ipynb` – Operações equivalentes com Apache Iceberg.
-
-### 📊 Imagens e Modelo ER
-
-Modelos relacionais, imagens, diagramas e dados de exemplo estão embutidos nos notebooks.
-
-Exemplo de código (Delta Lake):
-
-```python
-from delta import configure_spark_with_delta_pip
-from pyspark.sql import SparkSession
-
-builder = SparkSession.builder \
-    .appName("DeltaLakeExample") \
-    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
-    .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
-
-spark = configure_spark_with_delta_pip(builder).getOrCreate()
-```
 
 ---
 
