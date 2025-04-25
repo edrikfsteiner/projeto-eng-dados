@@ -96,3 +96,10 @@ mkdocs serve
 - `docs/index.md` – Página inicial.
 - `docs/delta-lake.md` – Documentação com comandos, imagens, modelo ER para Delta Lake.
 - `docs/iceberg.md` – Documentação similar para Iceberg.
+
+## Referências
+
+- https://www.youtube.com/watch?v=WwrX1YVmOyA&pp=ygUKZGF0YXdheSBictIHCQmECQGHKiGM7w%3D%3D
+- https://datawaybr.medium.com/do-zero-ao-pyspark-em-1h-4185005771e5
+- https://github.com/jlsilva01/spark-delta
+- https://github.com/jlsilva01/spark-iceberg
