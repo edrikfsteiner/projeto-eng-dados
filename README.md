@@ -4,6 +4,8 @@ Projeto desenvolvido para demonstração de funcionalidades do Apache Spark (PyS
 
 Ambiente Python isolado criado com [UV](https://github.com/astral-sh/uv), utilizando o JupyterLab como interface para notebooks.
 
+Documentação: https://edrikfsteiner.github.io/projeto-eng-dados/
+
 ## 📌 Descrição
 
 Este projeto demonstra:
